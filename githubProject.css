@@ -1,52 +1,15 @@
-/*body{
-	display: flex;
-}
-#fork img{
-	display:flex;
-	justify-content:flex-start;
-
-}
-
-#container{
-	flex-direction: column;
-	margin-left:10%;
-	margin-right:10%;
-}
-
-#x{
-	flex-direction: column;
-	justify-content: 
-}
-
-#x h1{
-	display: flex;
-	font-style: oblique;
-	flex-direction: column;
-		width:100%;
-	height:100%;
-}
-
-
-
-
-#octocat{
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-
-}
-
-#octocat-logo{
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
-*/
 body{
 	display: flex;
 }
+#fork{
+	display:flex;
+	justify-content:flex-start;
+}
 #fork img{
 	display:flex;
 	justify-content:flex-start;
+	width: 100%;
+	height:10%;
 
 }
 
@@ -71,13 +34,13 @@ body{
 	display: flex;
 	font-style: oblique;
 	flex-direction: column;
-		width:100%;
+	width:100%;
 	height:100%;
 
 }
 
 .x img{
-	
+	display: flex;
 }
 
 
@@ -101,6 +64,18 @@ body{
 	height:100%;
 
 }
+
+#octocat-logo img, #preview iframe{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+ #preview iframe{
+ 	width: 50%;
+ 	height: 50%;
+ }
+
 
 #search{
 	background: rgb(243, 202, 177);
