@@ -19,7 +19,7 @@
 					<h1>Get your <span><img src="http://githubbadge.appspot.com/image/icon-github.png"></span>badge now!</h1>			
 				</div>
 				<div id="preview">
-					<iframe src=""></iframe>
+					<iframe id="frame" src=""></iframe>
 				</div>
 			</div>
 			<div id="octocat-logo">
@@ -28,7 +28,7 @@
 		</div>
 		<div id="search">
 			<div id="search-container">
-				<input type="text" autocomplete="off" id="username" name="username" placeholder="Your GitHub username">
+				<input type="text" autocomplete="off" id="username" name="username" placeholder="Your GitHub username" onchange="hideBadget()">
 			</div>
 			<div id="checkbox-container">
 				<div id="search-left">
@@ -62,5 +62,11 @@
 			</p>			
 		</div>
 	</div>
+	  <script type="text/javascript">
+  	function hideBadget(){
+  		if(document.getElementById("username").value == "hide the badge")
+  			document.getElementById("frame").style.display="none";
+  	}
+  </script>
 </body>
 </html>
